@@ -1,4 +1,4 @@
 name: rview
-description: Stacked View and ViewModel
+description: Stacked View and ViewModel with responsive builder
 vars:
   - name
