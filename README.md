@@ -23,3 +23,7 @@ The **layouts** folder will contain small, medium, and large layout files. The e
 To install:
 
     mason add -g --source git https://github.com/jtmuller5/mullr-bricks --path mason/bricks/rview
+    
+To use:
+
+    mason make rview --name Name
