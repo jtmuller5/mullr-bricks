@@ -1,0 +1,9 @@
+bricks:
+  view:
+    path: bricks\view
+  main:
+    path: bricks\main
+  vmtest:
+    path: bricks\vmtest
+  tests:
+    path: bricks\tests
