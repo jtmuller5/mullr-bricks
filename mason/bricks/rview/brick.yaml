@@ -1,4 +1,4 @@
-name: view
+name: rview
 description: Stacked View and ViewModel
 vars:
   - name
