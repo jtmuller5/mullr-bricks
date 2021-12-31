@@ -19,3 +19,7 @@ The responsive view brick (rview) uses the following architecture:
 	 - base_view_model.dart
 
 The **layouts** folder will contain small, medium, and large layout files. The expectation is that these layout files will arrange widgets in the **widgets** folder in ways that are appropriate for the given screen size.
+
+To install:
+
+    mason add -g --source git https://github.com/jtmuller/mullr-bricks --path mason/rview
