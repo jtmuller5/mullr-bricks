@@ -9,7 +9,7 @@ ViewModelWidget
 <{{#pascalCase}}{{name}}ViewModel{{/pascalCase}}> {
 
 @override
-Widget build(BuildContext context, HomeViewModel model) {
+Widget build(BuildContext context, {{#pascalCase}}{{name}}ViewModel{{/pascalCase}} model) {
 return Row(
 children: [
 Flexible(
