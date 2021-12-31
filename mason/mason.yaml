@@ -1,6 +1,8 @@
 bricks:
   view:
     path: bricks\view
+  rview:
+    path: bricks\rview
   main:
     path: bricks\main
   vmtest:

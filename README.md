@@ -3,7 +3,8 @@ This repo contains bricks used by the [mason_cli](https://pub.dev/packages/mason
 
 I primarily code using the [stacked](https://pub.dev/packages/stacked) architecture by FilledStacks so many of the bricks below generate "stacked" code. This typically includes a View and a corresponding ViewModel.
 
-## Responsive View
+## Bricks
+### Responsive View
 The responsive view brick generates a single view that will resize itself responsively based on the dimensions of the screen it is displayed on. Breakpoints are determined using the [breakpoint](https://pub.dev/packages/breakpoint) package.
 
 The responsive view brick (rview) uses the following architecture:
