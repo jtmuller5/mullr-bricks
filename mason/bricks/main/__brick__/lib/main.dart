@@ -6,15 +6,10 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_portal/flutter_portal.dart';
 import 'package:flutterfire_ui/auth.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import '../app/app_router.gr.dart';
 import '../services/services.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:hive/hive.dart';
-import 'package:hive_flutter/hive_flutter.dart';
 import 'package:mullr_components/features/navigating/basic_navigator_observer.dart';
 import 'package:stacked/stacked.dart';
 import '../app/app_router.dart';
@@ -58,7 +53,7 @@ class AuthGate extends StatelessWidget {
                 ),
               );
             },
-            providerConfigs: [
+            providerConfigs: const [
               EmailProviderConfiguration(),
               GoogleProviderConfiguration(
                   clientId: '...' // In android, before googlecontent.com
