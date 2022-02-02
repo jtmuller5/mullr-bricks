@@ -2,7 +2,7 @@
     package="com.mullr.{{#snakeCase}}{{name}}{{/snakeCase}}">
     <application
         android:label="{{#titleCase}}{{variable}}{{/titleCase}}"
-        android:icon="@mipmap/launcher_icon">
+        >
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
