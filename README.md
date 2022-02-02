@@ -26,4 +26,4 @@ To install:
     
 To use:
 
-    mason make rview --name Name
+    mason make rview --name name
