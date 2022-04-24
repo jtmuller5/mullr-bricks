@@ -9,3 +9,5 @@ bricks:
     path: bricks\vmtest
   tests:
     path: bricks\tests
+  breakpoint_layouts:
+    path: bricks\breakpoint_layouts

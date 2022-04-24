@@ -11,6 +11,10 @@ AppService get appService {
   return GetIt.instance.get<AppService>();
 }
 
+FirebaseService get firebaseService {
+  return GetIt.instance.get<FirebaseService>();
+}
+
 StringService get stringService {
   return GetIt.instance.get<StringService>();
 }

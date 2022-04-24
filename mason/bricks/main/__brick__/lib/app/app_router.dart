@@ -1,7 +1,7 @@
 import 'package:auto_route/annotations.dart';
 import 'package:auto_route/auto_route.dart';
-import 'package:pose_test/ui/dashboard/dashboard_view.dart';
-import 'package:pose_test/ui/feed/feed_view.dart';
+import 'package:{{#snakeCase}}{{name}}{{/snakeCase}}/ui/dashboard/dashboard_view.dart';
+import 'package:{{#snakeCase}}{{name}}{{/snakeCase}}/ui/feed/feed_view.dart';
 import '../ui/home/home_view.dart';
 
 import '../ui/shared/notConnected/not_connected_view.dart';
