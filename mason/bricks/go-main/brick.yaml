@@ -3,7 +3,3 @@ description: Starting foundation for new Mullr apps
 vars:
   - name
 
-# cd to mason/bricks
-# mason new <BRICK_NAME>
-
-# mason add --global --source path ./mason/bricks/main

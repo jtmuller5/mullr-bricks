@@ -1,0 +1,4 @@
+name: stacked_breakpoints
+description: A layouts folder containing stacked widgets for each breakpoint in the breakpoints Flutter package.
+vars:
+  - name

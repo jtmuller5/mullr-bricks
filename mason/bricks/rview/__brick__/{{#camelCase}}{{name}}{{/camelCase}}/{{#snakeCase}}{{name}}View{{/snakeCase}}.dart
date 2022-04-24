@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
-import 'package:breakpoint/breakpoint.dart';
+import 'package:breakpoints/breakpoints.dart';
 import './{{#snakeCase}}{{name}}ViewModel{{/snakeCase}}.dart';
 
 class {{#pascalCase}}{{name}}View{{/pascalCase}} extends StatelessWidget {

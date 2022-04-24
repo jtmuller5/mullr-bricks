@@ -51,7 +51,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.mullr.{{#snakeCase}}{{name}}{{/snakeCase}}"
+        applicationId "com.mullr.{{#snakeCase}}{{name}}View{{/snakeCase}}"
         minSdkVersion 21
         targetSdkVersion 32
         multiDexEnabled true

@@ -1,0 +1,12 @@
+name: breakpoints
+description: A layouts folder containing widgets for each breakpoint in the breakpoints Flutter package.
+
+# Variables specify dynamic values that your brick depends on.
+## Zero or more variables can be specified for a given brick.
+## Each variable has:
+##  * a type (string, number, or boolean)
+##  * an optional short description
+##  * an optional default value
+##  * an optional prompt phrase used when asking for the variable.
+vars:
+  - name

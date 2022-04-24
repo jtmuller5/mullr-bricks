@@ -11,3 +11,5 @@ bricks:
     path: bricks\tests
   breakpoint_layouts:
     path: bricks\breakpoint_layouts
+  stacked_breakpoints:
+    path: bricks\stacked_breakpoints
