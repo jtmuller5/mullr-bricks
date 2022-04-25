@@ -1,4 +1,13 @@
 name: stacked_breakpoints
 description: A layouts folder containing stacked widgets for each breakpoint in the breakpoints Flutter package.
+
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev <0.1.0"
+
 vars:
-  - name
+  name:
+    type: string
+    description: The name of the base widget that will contain the BreakPointBuilder. Home becomes HomeView and HomeViewModel
+    prompt: What is the name of your widget?

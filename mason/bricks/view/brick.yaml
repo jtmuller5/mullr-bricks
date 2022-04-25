@@ -1,4 +1,13 @@
 name: view
 description: Stacked View and ViewModel
+
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev <0.1.0"
+
 vars:
-  - name
+  name:
+    type: string
+    description: Name of base widget.
+    prompt: What is the name of your widget?

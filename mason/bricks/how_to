@@ -1,4 +1,4 @@
 # cd to mason/bricks
 # mason new <BRICK_NAME>
 # cd to root (mullr-bricks)
-# mason add --global --source path ./mason/bricks/main
+# mason add <NAME> --global --path ./mason/bricks/<NAME>

@@ -1,15 +1,13 @@
 bricks:
   view:
-    path: bricks\view
+    path: "bricks\\view"
   rview:
-    path: bricks\rview
+    path: "bricks\\rview"
   main:
-    path: bricks\main
-  vmtest:
-    path: bricks\vmtest
+    path: "bricks\\main"
   tests:
-    path: bricks\tests
-  breakpoint_layouts:
-    path: bricks\breakpoint_layouts
+    path: "bricks\\tests"
+  breakpoints:
+    path: "bricks\\breakpoints"
   stacked_breakpoints:
-    path: bricks\stacked_breakpoints
+    path: "bricks\\stacked_breakpoints"

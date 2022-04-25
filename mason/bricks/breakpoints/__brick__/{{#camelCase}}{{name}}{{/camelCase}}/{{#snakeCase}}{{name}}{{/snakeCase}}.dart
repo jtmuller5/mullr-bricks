@@ -6,7 +6,7 @@ import 'layouts/small.dart';
 import 'layouts/xlarge.dart';
 import 'layouts/xsmall.dart';
 
-class {{#titleCase}}{{name}}{{/titleCase}}extends StatelessWidget {
+class {{#titleCase}}{{name}}{{/titleCase}} extends StatelessWidget {
 const {{#titleCase}}{{name}}{{/titleCase}}({Key? key}) : super(key: key);
 
 @override
@@ -15,15 +15,15 @@ return BreakpointBuilder(
 builder: (context, breakpoint) {
 switch (breakpoint.window) {
 case WindowSize.xsmall:
-return XSmall{{#titleCase}}{{name}}{{/titleCase}}View();
+return XSmall{{#titleCase}}{{name}}{{/titleCase}}();
 case WindowSize.small:
-return Small{{#titleCase}}{{name}}{{/titleCase}}View();
+return Small{{#titleCase}}{{name}}{{/titleCase}}();
 case WindowSize.medium:
-return Medium{{#titleCase}}{{name}}{{/titleCase}}View();
+return Medium{{#titleCase}}{{name}}{{/titleCase}}();
 case WindowSize.large:
-return Large{{#titleCase}}{{name}}{{/titleCase}}View();
+return Large{{#titleCase}}{{name}}{{/titleCase}}();
 case WindowSize.xlarge:
-return XLarge{{#titleCase}}{{name}}{{/titleCase}}View();
+return XLarge{{#titleCase}}{{name}}{{/titleCase}}();
 }
 },
 );
