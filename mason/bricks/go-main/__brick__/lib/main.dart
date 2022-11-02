@@ -32,9 +32,9 @@ class App extends StatelessWidget {
       child: Portal(
         child: MaterialApp.router(
           theme: lightTheme,
-          routeInformationParser: goRouter.routeInformationParser,
-          routerDelegate: goRouter.routerDelegate,
-          title: 'Healthy Pet Connect Dashboard',
+          routeInformationParser: router.routeInformationParser,
+          routerDelegate: router.routerDelegate,
+          title: 'My App',
         ),
       ),
     );
