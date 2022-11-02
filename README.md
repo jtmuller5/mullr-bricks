@@ -22,8 +22,8 @@ The **layouts** folder will contain small, medium, and large layout files. The e
 
 To install:
 
-    mason add -g go-main --git-url https://github.com/jtmuller5/mullr-bricks --path mason/bricks
+    mason add -g go-main --git-url https://github.com/jtmuller5/mullr-bricks --git-path mason/bricks/go-main
     
 To use:
 
-    mason make rview --name name
+    mason make go-main --name name
