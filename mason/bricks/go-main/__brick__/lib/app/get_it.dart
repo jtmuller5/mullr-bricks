@@ -1,10 +1,10 @@
 import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
-import 'package:{{#snakeCase}}{{name}}View{{/snakeCase}}/services/utilities/file_service.dart';
-import 'package:{{#snakeCase}}{{name}}View{{/snakeCase}}/services/utilities/string_service.dart';
-import 'package:{{#snakeCase}}{{name}}View{{/snakeCase}}/services/utilities/system_service.dart';
-import 'package:{{#snakeCase}}{{name}}View{{/snakeCase}}/services/utilities/time_service.dart';
-import 'package:{{#snakeCase}}{{name}}View{{/snakeCase}}/services/utilities/toast_service.dart';
+import 'package:{{name.snakeCase()}}/features/shared/services/file_service.dart';
+import 'package:{{name.snakeCase()}}/features/shared/services/string_service.dart';
+import 'package:{{name.snakeCase()}}/features/shared/services/system_service.dart';
+import 'package:{{name.snakeCase()}}/features/shared/services/time_service.dart';
+import 'package:{{name.snakeCase()}}/features/shared/services/toast_service.dart';
 
 import 'get_it.config.dart';
 

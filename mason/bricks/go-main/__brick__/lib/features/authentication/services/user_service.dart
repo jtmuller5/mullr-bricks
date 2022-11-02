@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart' hide User;
 import 'package:injectable/injectable.dart';
 import '../models/user.dart';
-import '../../../services/services/services.dart';
+import 'package:{{name.snakeCase()}}/app/services.dart';
 import 'package:stacked/stacked.dart';
 
 @singleton
