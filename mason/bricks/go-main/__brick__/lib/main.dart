@@ -1,5 +1,4 @@
-import 'package:{{#snakeCase}}{{name}}View{{/snakeCase}}/app/go_router.dart';
-import 'package:{{#snakeCase}}{{name}}View{{/snakeCase}}/shared/observers/basic_navigator_observer.dart';
+import 'package:{{name.snakeCase()}}/app/router.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

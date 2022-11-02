@@ -1,7 +1,5 @@
-import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:get_it/get_it.dart';
-import '../../../services/utilities/package:{{#snakeCase}}{{name}}View{{/snakeCase}}/services/utilities/navigation_service.dart';
+import 'package:{{name.snakeCase()}}/app/router.dart';
 
 /// Service for displaying toasts, snackbars, banners, or other
 /// temporary info boxes
@@ -24,39 +22,39 @@ class ToastService {
     String no = 'Cancel',
   }) async {
     return await showDialog(
-          context: context,
-          builder: (context) {
-            return AlertDialog(
-              title: Text(title),
-              actions: [
-                TextButton(
-                  child: Text(no),
-                  onPressed: () {
-                    AutoRouter.of(context).pop(false);
-                  },
-                ),
-                TextButton(
-                  child: Text(
-                    yes,
-                    style: TextStyle(color: Colors.red),
-                  ),
-                  onPressed: () {
-                    AutoRouter.of(context).pop(true);
-                  },
-                )
-              ],
-            );
-          },
-        ) ??
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: Text(title),
+          actions: [
+            TextButton(
+              child: Text(no),
+              onPressed: () {
+                router.pop();
+              },
+            ),
+            TextButton(
+              child: Text(
+                yes,
+                style: TextStyle(color: Colors.red),
+              ),
+              onPressed: () {
+                router.pop();
+              },
+            )
+          ],
+        );
+      },
+    ) ??
         false;
   }
 
   Future<bool> confirmLeave(
-    BuildContext context, {
-    String title = 'Exit the app?',
-    String yes = 'Exit',
-    String no = 'Stay',
-  }) async {
+      BuildContext context, {
+        String title = 'Exit the app?',
+        String yes = 'Exit',
+        String no = 'Stay',
+      }) async {
     bool leave = false;
     await showDialog(
       context: context,
@@ -68,7 +66,7 @@ class ToastService {
               child: Text(no),
               onPressed: () async {
                 leave = false;
-                await GetIt.instance.get<NavigationServiceInterface>().back();
+                router.pop();
               },
             ),
             TextButton(
@@ -78,7 +76,7 @@ class ToastService {
               ),
               onPressed: () async {
                 leave = true;
-                await GetIt.instance.get<NavigationServiceInterface>().back();
+                router.pop();
               },
             )
           ],
