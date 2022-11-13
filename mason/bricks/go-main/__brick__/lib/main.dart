@@ -40,5 +40,3 @@ class App extends StatelessWidget {
     );
   }
 }
-
-class AppModel extends BaseViewModel {}
