@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mullr.{{#snakeCase}}{{name}}{{/snakeCase}}">
     <application
-        android:label="{{#titleCase}}{{variable}}{{/titleCase}}"
+        android:label="{{name.titleCase()}}"
         >
         <activity
             android:name=".MainActivity"
