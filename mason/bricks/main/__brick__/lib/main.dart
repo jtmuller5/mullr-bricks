@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_portal/flutter_portal.dart';
-import 'package:{{#snakeCase}}{{name}}View{{/snakeCase}}/shared/observers/basic_navigator_observer.dart';
+import 'package:{{name.snakeCase()}}_view/snakeCase}}/shared/observers/basic_navigator_observer.dart';
 import 'package:stacked/stacked.dart';
 import '../app/app_router.dart';
 import '../app/get_it.dart';

@@ -1,8 +1,8 @@
 import 'package:get_it/get_it.dart';
-import 'package:{{#snakeCase}}{{name}}View{{/snakeCase}}/services/utilities/string_service.dart';
-import 'package:{{#snakeCase}}{{name}}View{{/snakeCase}}/services/utilities/system_service.dart';
-import 'package:{{#snakeCase}}{{name}}View{{/snakeCase}}/services/utilities/time_service.dart';
-import 'package:{{#snakeCase}}{{name}}View{{/snakeCase}}/services/utilities/toast_service.dart';
+import 'package:{{name.snakeCase()}}_view/snakeCase}}/services/utilities/string_service.dart';
+import 'package:{{name.snakeCase()}}_view/snakeCase}}/services/utilities/system_service.dart';
+import 'package:{{name.snakeCase()}}_view/snakeCase}}/services/utilities/time_service.dart';
+import 'package:{{name.snakeCase()}}_view/snakeCase}}/services/utilities/toast_service.dart';
 
 import 'utilities/app_service.dart';
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
-import '../{{#snakeCase}}{{name}}ViewModel{{/snakeCase}}.dart';
+import '../{{name.snakeCase()}}_view_model/snakeCase}}.dart';
 
 class Medium{{#titleCase}}{{name}}{{/titleCase}}View extends ViewModelWidget<{{#titleCase}}{{name}}{{/titleCase}}ViewModel> {
 const Medium{{#titleCase}}{{name}}{{/titleCase}}View({Key? key}) : super(key: key);

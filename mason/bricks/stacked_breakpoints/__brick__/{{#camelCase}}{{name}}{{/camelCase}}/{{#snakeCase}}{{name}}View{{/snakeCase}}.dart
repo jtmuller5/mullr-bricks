@@ -1,7 +1,7 @@
 import 'package:breakpoint/breakpoint.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
-import './{{#snakeCase}}{{name}}ViewModel{{/snakeCase}}.dart';
+import './{{name.snakeCase()}}_view_model/snakeCase}}.dart';
 import 'layouts/large.dart';
 import 'layouts/medium.dart';
 import 'layouts/small.dart';

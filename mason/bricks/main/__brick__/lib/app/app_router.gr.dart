@@ -12,10 +12,10 @@
 
 import 'package:auto_route/auto_route.dart' as _i5;
 import 'package:flutter/material.dart' as _i6;
-import 'package:{{#snakeCase}}{{name}}View{{/snakeCase}}/ui/dashboard/dashboard_view.dart' as _i3;
-import 'package:{{#snakeCase}}{{name}}View{{/snakeCase}}/ui/feed/feed_view.dart' as _i4;
-import 'package:{{#snakeCase}}{{name}}View{{/snakeCase}}/ui/home/home_view.dart' as _i1;
-import 'package:{{#snakeCase}}{{name}}View{{/snakeCase}}/ui/shared/notConnected/not_connected_view.dart'
+import 'package:{{name.snakeCase()}}_view/snakeCase}}/ui/dashboard/dashboard_view.dart' as _i3;
+import 'package:{{name.snakeCase()}}_view/snakeCase}}/ui/feed/feed_view.dart' as _i4;
+import 'package:{{name.snakeCase()}}_view/snakeCase}}/ui/home/home_view.dart' as _i1;
+import 'package:{{name.snakeCase()}}_view/snakeCase}}/ui/shared/notConnected/not_connected_view.dart'
     as _i2;
 
 class AppRouter extends _i5.RootStackRouter {

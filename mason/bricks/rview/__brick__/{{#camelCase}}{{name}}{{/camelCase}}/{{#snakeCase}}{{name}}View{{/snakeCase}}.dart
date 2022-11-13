@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 import 'package:breakpoints/breakpoints.dart';
-import './{{#snakeCase}}{{name}}ViewModel{{/snakeCase}}.dart';
+import './{{name.snakeCase()}}_view_model/snakeCase}}.dart';
 
 class {{#pascalCase}}{{name}}View{{/pascalCase}} extends StatelessWidget {
 const {{#pascalCase}}{{name}}View{{/pascalCase}}({Key? key}) : super(key: key);
