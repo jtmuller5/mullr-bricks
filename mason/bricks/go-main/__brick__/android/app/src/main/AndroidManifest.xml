@@ -1,6 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mullr.{{#snakeCase}}{{name}}{{/snakeCase}}">
+    package="com.mullr.{{name.snakeCase()}}">
     <application
+        android:icon="@mipmap/launcher_icon"
         android:label="{{name.titleCase()}}"
         >
         <activity
