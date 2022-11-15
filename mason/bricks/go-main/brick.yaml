@@ -11,4 +11,9 @@ vars:
     type: string
     description: Name of App.
     prompt: What is the name of your App?
+  firebase:
+    type: boolean
+    description: Setup with Firebase Authentication.
+    prompt: Include Firebase Auth?
+    default: false
 

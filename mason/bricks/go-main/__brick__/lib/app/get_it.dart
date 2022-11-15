@@ -23,11 +23,4 @@ final getIt = GetIt.instance;
 void configureDependencies({String? env}) {
   // Configure app-specific dependencies
   $initGetIt(getIt, environment: env);
-
-  // Register shared services
-  getIt.registerFactory<FileService>(() => FileService());
-  getIt.registerFactory<StringService>(() => StringService());
-  getIt.registerFactory<TimeService>(() => TimeService());
-  getIt.registerFactory<ToastService>(() => ToastService());
-  getIt.registerFactory<SystemService>(() => SystemService());
 }

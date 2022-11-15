@@ -1,7 +1,9 @@
 import 'dart:io';
 
 import 'package:path_provider/path_provider.dart';
+import 'package:injectable/injectable.dart';
 
+@injectable
 class FileService {
   String timestamp() => DateTime.now().millisecondsSinceEpoch.toString();
 
