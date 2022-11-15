@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:{{name.snakeCase()}}/app/router.dart';
+import 'package:injectable/injectable.dart';
 
 /// Service for displaying toasts, snackbars, banners, or other
 /// temporary info boxes
 /// SimpleDialog can get you most of the way there
 
+@injectable
 class ToastService {
   void showSnackbar(BuildContext context, String message) {
     ScaffoldMessenger.of(context).showSnackBar(SnackBar(

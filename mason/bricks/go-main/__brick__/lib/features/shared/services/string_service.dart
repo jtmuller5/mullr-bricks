@@ -1,10 +1,6 @@
-/*
-FUNCTION:
-DESCRIPTION: Service to handle any string manipulation or validation
-PARAMETERS: input - string
- */
+import 'package:injectable/injectable.dart';
 
-
+@injectable
 class StringService {
   /// Custom validator that looks for specific features in a string
   /// Specify the things you want (notEmpty, containsUppercase, etc)

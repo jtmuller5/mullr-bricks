@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:timeago/timeago.dart' as timeago;
+import 'package:injectable/injectable.dart';
 
 /// Injectable service for Durations, DateTimes, and displaying formatted timestamps
-
+@injectable
 class TimeService {
   MaterialLocalizations getLocalization(BuildContext context) {
     return MaterialLocalizations.of(context);
