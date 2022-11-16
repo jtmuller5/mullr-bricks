@@ -1,63 +1,38 @@
+import 'package:auto_route/annotations.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:{{name.snakeCase()}}/features/home/ui/home/home_view.dart';
 import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 
 
-final GoRouter router = GoRouter(
-  routes: <GoRoute>[
-    GoRoute(
-      path: '/',
-      builder: (BuildContext context, GoRouterState state) {
-        return const HomeView();
-      },
+@MaterialAutoRouter(
+  replaceInRouteName: 'View,Route',
+  routes: [
+    // MARK: Root
+    MaterialRoute(
+        page: HomeView,
+        path: '/',
+        initial: true,
+        guards: [AuthGuard]
+    ),
+    MaterialRoute(
+      page: NewPostView,
+      path: '/new-post',
     ),
     {{#firebase}}
-     GoRoute(
+    MaterialRoute(page: RegisterScreen, path: '/register'),
+    CustomRoute(
       path: '/sign-in',
-      builder: (context, state) {
-        return SignInScreen(
-
-          headerBuilder: (context, constraints, shrinkOffset) {
-            return Image.asset('assets/images/{{name.snakeCase()}}_logo.png');
-          },
-          actions: [
-            AuthStateChangeAction<SignedIn>((context, state) {
-              FirebaseAnalytics.instance.logLogin(loginMethod: 'app');
-              router.replace('/');
-            }),
-            AuthStateChangeAction<UserCreated>((context, state) {
-              FirebaseAnalytics.instance.logSignUp(signUpMethod: 'app');
-              router.replace('/');
-            })
-          ],
-        );
-      },
+      page: SignInScreen,
+      customRouteBuilder: signInRouteBuilder,
     ),
-    GoRoute(
-      path: '/register',
-      builder: (context, state) {
-        return RegisterScreen();
-      },
-    ),
-    GoRoute(
+    CustomRoute(
       path: '/profile',
-      builder: (context, state) {
-        return ProfileScreen(
-          appBar: AppBar(
-            title: Text('Profile'),
-          ),
-          actions: [
-            SignedOutAction((context) {
-              router.pop();
-              router.replace('/');
-            }),
-          ],
-        );
-      },
+      page: ProfileScreen,
+      customRouteBuilder: profileRouteBuilder,
     ),
     {{/firebase}}
-
   ],
-);
+)
+class $Router {}

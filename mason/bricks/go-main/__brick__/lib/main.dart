@@ -6,6 +6,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_portal/flutter_portal.dart';
 import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:stacked/stacked.dart';
+import 'package:{{name.snakeCase()}}/app/navigation/auth_guard.dart';
 import '../app/get_it.dart';
 import '../app/themes/light_theme.dart';
 
@@ -24,6 +25,10 @@ Future<void> main() async {
 
   FirebaseAnalytics.instance.logAppOpen();
   {{\firebase}}
+
+  GetIt.instance.registerSingleton(Router(
+  authGuard: AuthGuard()
+  ));
 
   runApp(
     MaterialApp(
@@ -47,10 +52,10 @@ class App extends StatelessWidget {
       child: Portal(
         child: MaterialApp.router(
           theme: lightTheme,
-          routeInformationParser: router.routeInformationParser,
-          routerDelegate: router.routerDelegate,
-          title: 'My App',
-        ),
+          title: '{{name.titleCase()}}',
+          routerDelegate: router.delegate(),
+          routeInformationParser: router.defaultRouteParser(),
+        )
       ),
     );
   }
