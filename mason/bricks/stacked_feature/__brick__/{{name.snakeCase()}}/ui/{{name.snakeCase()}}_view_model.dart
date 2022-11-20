@@ -1,6 +1,6 @@
 import 'package:stacked/stacked.dart';
 
-class {{name.pascalCase()}} extends BaseViewModel{
+class {{name.pascalCase()}}ViewModel extends BaseViewModel{
 
   void initialize(){
 
